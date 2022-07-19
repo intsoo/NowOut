@@ -351,6 +351,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/GameDataManagement/DataController.cs"
 "Assets/ImportedAssets/Joystick Pack/Examples/JoystickPlayerExample.cs"
 "Assets/ImportedAssets/Joystick Pack/Examples/JoystickSetterExample.cs"
 "Assets/ImportedAssets/Joystick Pack/Scripts/Base/Joystick.cs"
