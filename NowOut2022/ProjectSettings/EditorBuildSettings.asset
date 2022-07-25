@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Episode1_UI_KSH.unity
+    guid: cd05eb493537edf44930de3cce6c3312
   m_configObjects: {}
