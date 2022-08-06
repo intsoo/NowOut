@@ -66,11 +66,15 @@ public class PlayerMove_LJY : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        /*
         if(collision.gameObject.tag == "Floor")
         {
             PlayerAnim_LJY.SetBool("isJump", false);
             isJump_LJY = false; 
         }
+        */
+        PlayerAnim_LJY.SetBool("isJump", false);
+        isJump_LJY = false;
     }
 
 }
