@@ -30,6 +30,10 @@ public class PlayerMove_LJY : MonoBehaviour
         // 2. Move Position
         moveVec_LJY = new Vector3(x, 0, z) * speed_LJY * Time.fixedDeltaTime;
         rigid_LJY.MovePosition(rigid_LJY.position + moveVec_LJY);
+        DataController.Instance.gameData.isMove = true;
+
+        if(moveVec_LJY == Vector3.zero)
+            DataController.Instance.gameData.isMove = false;
 
         if (moveVec_LJY.sqrMagnitude == 0)
             return; //No input = No rotation
