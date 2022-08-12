@@ -1,0 +1,8 @@
+<<<<<<< HEAD
+places filter=lfs diff=lfs merge=lfs -text
+Character filter=lfs diff=lfs merge=lfs -text
+Artifacts filter=lfs diff=lfs merge=lfs -text
+=======
+63baf9935a4eb89245a9216a7a21cfb5 filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
+>>>>>>> b7c671b61787122e07d38899772dbb7b86349bf5

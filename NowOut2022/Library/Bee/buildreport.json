@@ -5,16 +5,15 @@
 { "pid": "Unity", "ph":"M", "name": "process_name", "args": {"name": "Unity"} },
 { "pid": "Unity", "ph":"M", "name": "process_sort_index", "args": {"sort_index": -100} },
 { "pid": "Unity", "tid": 1, "ph":"M", "name": "thread_name", "args": {"name": ""} },
-{ "pid": "Unity", "tid": 1,"ts": 6667499016.2,"dur": 5491861.8, "ph":"X", "name": "Build player"},
-{ "pid": "Unity", "tid": 1,"ts": 6667595146,"dur": 813169.1, "ph":"X", "name": "Preprocess Player"},
-{ "pid": "Unity", "tid": 1,"ts": 6668458332.6,"dur": 4240439.8, "ph":"X", "name": "Prepare For Build"},
+{ "pid": "Unity", "tid": 1,"ts": 642530073633.8,"dur": 3648969.8, "ph":"X", "name": "Build player"},
+{ "pid": "Unity", "tid": 1,"ts": 642530170791.4,"dur": 1285384.4, "ph":"X", "name": "Preprocess Player"},
 {}
 
 ],
-"meta_datetime": "07/25/2022 12:55:32",
-"meta_command_line": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.6f1\\Editor\\Unity.exe\" -projectpath C:\\Unity3D_NowOut\\NowOut2022 -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-82103 -hubSessionId 1fad9690-0bcb-11ed-aacc-e5194da5ecd7 -accessToken VI1EvjlftqKSGgSU1NkJ-CbymbOyzxOmcChDgXZkeiA00df",
-"meta_command_line_args": "C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.6f1\\Editor\\Unity.exe -projectpath C:\\Unity3D_NowOut\\NowOut2022 -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-82103 -hubSessionId 1fad9690-0bcb-11ed-aacc-e5194da5ecd7 -accessToken VI1EvjlftqKSGgSU1NkJ-CbymbOyzxOmcChDgXZkeiA00df",
-"meta_user_name": "82103",
-"meta_os_version": "Microsoft Windows NT 10.0.19044.0",
+"meta_datetime": "08/08/2022 07:21:36",
+"meta_command_line": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.6f1\\Editor\\Unity.exe\" -projectpath \"C:\\Program Files\\GitHub\\Unity3D_NowOut\\NowOut2022\" -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-yongm -hubSessionId 200884f0-1699-11ed-bb33-41871124b6ef -accessToken 8HEONaP30KyIvnDaayLAMoHqjsFke2TDvCoiz22vkcE00df",
+"meta_command_line_args": "C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.6f1\\Editor\\Unity.exe -projectpath C:\\Program Files\\GitHub\\Unity3D_NowOut\\NowOut2022 -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-yongm -hubSessionId 200884f0-1699-11ed-bb33-41871124b6ef -accessToken 8HEONaP30KyIvnDaayLAMoHqjsFke2TDvCoiz22vkcE00df",
+"meta_user_name": "yongm",
+"meta_os_version": "Microsoft Windows NT 10.0.22000.0",
 "meta_cpu_count": "8"
 }

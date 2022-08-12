@@ -142,5 +142,12 @@ public class DataController : MonoBehaviour
     {
         public int clues = 0;
         public int jump = 0;
+
+        public bool isMove = false;
+
+        public Vector3 cameraOffset;
+
+        public int Ep1_obj1 = 0;
+        public int Ep1_obj2 = 0;
     }
 }
