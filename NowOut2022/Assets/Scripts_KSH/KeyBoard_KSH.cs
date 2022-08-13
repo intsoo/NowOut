@@ -11,7 +11,7 @@ public class KeyBoard_KSH : MonoBehaviour
     private TMP_InputField inputField;
     [SerializeField]
     private TextMeshProUGUI text;
-
+ 
     private void Awake()
     {
         inputField.onValueChanged.AddListener(OnValueChangedEvent);
@@ -19,15 +19,6 @@ public class KeyBoard_KSH : MonoBehaviour
         inputField.onSelect.AddListener(OnSelectEvent);
         inputField.onDeselect.AddListener(OnDeselectEvent);
 
-        inputField.onValidateInput = (string text, int charIndex, char addedChar) =>
-        {
-            char toUpper = addedChar;
-            if (addedChar >= 'a' && addedChar <= 'z')
-            {
-                toUpper = (char)(addedChar + ('A' - 'a'));
-            }
-            return toUpper;
-        };
     }
     public void OnValueChangedEvent(string str)
     {
@@ -45,4 +36,6 @@ public class KeyBoard_KSH : MonoBehaviour
     {
         text.text = str;
     }
+
+ 
 }
