@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Episode1_LJY.unity
+- path: Assets/Scenes/Episode1_UI_KSH.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
