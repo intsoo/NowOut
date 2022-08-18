@@ -1,5 +1,9 @@
 sceneSetups:
-- path: Assets/Scenes/Episode1_UI_KSH.unity
+- path: Assets/Scenes/Episode1_LJY.unity
   isLoaded: 1
   isActive: 1
+  isSubScene: 0
+- path: Assets/CutScene_KSH/IntroCutScene.unity
+  isLoaded: 1
+  isActive: 0
   isSubScene: 0

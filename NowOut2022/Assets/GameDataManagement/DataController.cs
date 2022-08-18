@@ -149,5 +149,10 @@ public class DataController : MonoBehaviour
 
         public int Ep1_obj1 = 0;
         public int Ep1_obj2 = 0;
+
+        public int Ep1_Clear = 0;
+
+        public int Ep1_obj1Order = 0;
+        public int Ep1_obj2Order = 0;
     }
 }

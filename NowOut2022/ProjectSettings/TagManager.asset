@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Floor
   - KeyItem
+  - obj1Btn
+  - obj2Btn
+  - Sister
   layers:
   - Default
   - TransparentFX
