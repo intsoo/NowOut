@@ -11,9 +11,12 @@ public class KeyBoard_KSH : MonoBehaviour
     private TMP_InputField inputField;
     [SerializeField]
     private TextMeshProUGUI text;
- 
+    [SerializeField] GameObject inputFieldCanvas;
+
     private void Awake()
     {
+        inputFieldCanvas.SetActive(true);
+        inputField.text = "";
         inputField.onValueChanged.AddListener(OnValueChangedEvent);
         inputField.onEndEdit.AddListener(OnEndEditEvent);
         inputField.onSelect.AddListener(OnSelectEvent);
@@ -22,19 +25,26 @@ public class KeyBoard_KSH : MonoBehaviour
     }
     public void OnValueChangedEvent(string str)
     {
-        text.text = str;
+        inputField.text = str;
     }
     public void OnEndEditEvent(string str)
     {
-        text.text = str;
+        inputField.text = str;
+        if (str == "wish")
+        {
+            inputFieldCanvas.SetActive(false);
+            DataController.Instance.gameData.Ep1_Clear++;
+        }
+        else
+            inputFieldCanvas.SetActive(true);
     }
     public void OnSelectEvent(string str)
     {
-        text.text = str;
+        inputField.text = str;
     }
     public void OnDeselectEvent(string str)
     {
-        text.text = str;
+        inputField.text = str;
     }
 
  
