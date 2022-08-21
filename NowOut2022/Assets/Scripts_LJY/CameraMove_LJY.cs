@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class CameraMove_LJY : MonoBehaviour
 {
@@ -12,26 +11,20 @@ public class CameraMove_LJY : MonoBehaviour
 
     void Update()
     {
-        
         if (Input.GetMouseButton(0) && DataController.Instance.gameData.isMove==false) // 클릭한 경우
         {
-            if (!EventSystem.current.IsPointerOverGameObject())
-            {
-                //클릭 처리
-                xRotateMove = -Input.GetAxis("Mouse Y") * Time.deltaTime * rotateSpeed;
-                yRotateMove = Input.GetAxis("Mouse X") * Time.deltaTime * rotateSpeed;
+            xRotateMove = -Input.GetAxis("Mouse Y") * Time.deltaTime * rotateSpeed;
+            yRotateMove = Input.GetAxis("Mouse X") * Time.deltaTime * rotateSpeed;
 
-                yRotate = transform.eulerAngles.y + yRotateMove;
-                //xRotate = transform.eulerAngles.x + xRotateMove; 
-                xRotate = xRotate + xRotateMove;
+            yRotate = transform.eulerAngles.y + yRotateMove;
+            //xRotate = transform.eulerAngles.x + xRotateMove; 
+            xRotate = xRotate + xRotateMove;
 
-                xRotate = Mathf.Clamp(xRotate, -90, 90); // 위, 아래 고정
+            xRotate = Mathf.Clamp(xRotate, -90, 90); // 위, 아래 고정
 
-                transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
+            transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
 
-                //RotateAround_LJY(target_LJY.position, DataController.Instance.gameData.cameraOffset, 20);
-            }
-
+            //RotateAround_LJY(target_LJY.position, DataController.Instance.gameData.cameraOffset, 20);
         }
     }
     /*

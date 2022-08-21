@@ -8,10 +8,7 @@ using TMPro;
 public class CheckKeyBoardInput : MonoBehaviour
 {
     [SerializeField] GameObject canvas;
-    public void Awake()
-    {
-        canvas.SetActive(true);
-    }
+
     // input text°¡ wish¸é input.SetActive(false);
     public void Check(TMP_InputField f)
     {
