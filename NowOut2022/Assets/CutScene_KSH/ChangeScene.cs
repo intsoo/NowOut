@@ -9,24 +9,26 @@ public class ChangeScene : MonoBehaviour
     float timer;
     int waitingTime;
     public VideoPlayer videoClip;
-    void Start()
+    void Awake()
     {
         timer = 0;
+       
     }
 
     void Update()
     {
         
         timer += Time.deltaTime;
-        if (timer > videoClip.length)
+         if (timer >= videoClip.length)
         {
             LoadScene();
+            return;
         }
     }
-  public void LoadScene()
-    {
-        SceneManager.LoadScene("Episode1_LJY");
-    }
 
+    void LoadScene()
+    {
+        SceneManager.LoadScene("Scenes/Episode1_LJY");
+    }
   
 }
