@@ -9,6 +9,8 @@ TagManager:
   - obj1Btn
   - obj2Btn
   - Sister
+  - Phone
+  - Earphone
   layers:
   - Default
   - TransparentFX

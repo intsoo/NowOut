@@ -4313,7 +4313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a62d37502c0dd124d8c1ba8a3971e232, type: 3}
       propertyPath: m_TagString
-      value: KeyItem
+      value: Phone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a62d37502c0dd124d8c1ba8a3971e232, type: 3}
@@ -4352,8 +4352,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdcb6d7faebb38247b0f43884d68a7d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupText_LJY: {fileID: 1132271900}
   pickupBtn_LJY: {fileID: 934437057}
+  pickupPhone_LJY: {fileID: 1132271900}
+  pickupEarphone_LJY: {fileID: 526521455}
 --- !u!1 &906084096
 GameObject:
   m_ObjectHideFlags: 0
@@ -9389,7 +9390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c92b777a327472645a1590bc9e6d66ef, type: 3}
       propertyPath: m_TagString
-      value: KeyItem
+      value: Earphone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c92b777a327472645a1590bc9e6d66ef, type: 3}
@@ -9428,8 +9429,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdcb6d7faebb38247b0f43884d68a7d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupText_LJY: {fileID: 1132271900}
   pickupBtn_LJY: {fileID: 934437057}
+  pickupPhone_LJY: {fileID: 1132271900}
+  pickupEarphone_LJY: {fileID: 526521455}
 --- !u!1 &1735428071
 GameObject:
   m_ObjectHideFlags: 0
