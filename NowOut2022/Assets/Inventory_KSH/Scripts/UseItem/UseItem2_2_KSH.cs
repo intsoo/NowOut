@@ -12,6 +12,8 @@ public class UseItem2_2_KSH : MonoBehaviour
     private obj2_2ButtonTouch_KSH bool_script2;
     public GameObject Btn;
     public GameObject objCanvas;
+    public GameObject DataController;
+
     private void Start()
     {
         bool_script2 = Btn.GetComponent<obj2_2ButtonTouch_KSH>();
@@ -36,9 +38,9 @@ public class UseItem2_2_KSH : MonoBehaviour
         TouchSister();
         if (isTouchSister)
         {
-            DataController.Instance.gameData.Ep1_Clear++;
-            DataController.Instance.gameData.Ep1_obj2 = 0;
-            DataController.Instance.gameData.Ep1_obj2Order = 0;
+            DataController.GetComponent<DataController>().gameData.Ep1_Clear++;
+            DataController.GetComponent<DataController>().gameData.Ep1_obj2Order = 0;
+            DataController.GetComponent<DataController>().SaveGameData();
             bool_script2.obj2_2BtnTouch = false;
             objCanvas.SetActive(false);
         }

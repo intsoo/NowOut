@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -10,13 +8,26 @@ public class CameraMove_LJY : MonoBehaviour
 
     public Transform target_LJY;
 
+    public GameObject DataController;
+    public int pointerId=0;
+
+//    private void Awake()
+//    {
+////#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBPLAYER
+////        pointerId = -1;
+////#elif UNITY_ANDROID ||UNITY_IOS || UNITY_WP8 || UNITY_IPHONE
+////pointerId = 0;
+////#endif
+//    }
+
     void Update()
     {
-        
-        if (Input.GetMouseButton(0) && DataController.Instance.gameData.isMove==false) // 클릭한 경우
+        DataController.GetComponent<DataController>().SaveGameData();
+        if (Input.GetMouseButton(0) && DataController.GetComponent<DataController>().gameData.isMove == false) // 클릭한 경우
         {
-            if (!EventSystem.current.IsPointerOverGameObject())
+            if (!EventSystem.current.IsPointerOverGameObject(pointerId))
             {
+
                 //클릭 처리
                 xRotateMove = -Input.GetAxis("Mouse Y") * Time.deltaTime * rotateSpeed;
                 yRotateMove = Input.GetAxis("Mouse X") * Time.deltaTime * rotateSpeed;

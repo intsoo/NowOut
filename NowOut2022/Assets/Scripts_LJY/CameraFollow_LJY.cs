@@ -10,6 +10,7 @@ public class CameraFollow_LJY : MonoBehaviour
 
     public Transform target_LJY;
     public Vector3 offset_LJY;
+    public GameObject DataController;
 
     void Update()
     {
@@ -19,7 +20,7 @@ public class CameraFollow_LJY : MonoBehaviour
         //moveCamVec_LJY = new Vector3(hAxis_LJY, 0, vAxis_LJY).normalized;
 
         transform.position = target_LJY.position + offset_LJY;
-        DataController.Instance.gameData.cameraOffset = offset_LJY;
+        DataController.GetComponent<DataController>().gameData.cameraOffset = offset_LJY;
         //transform.RotateAround(target_LJY.position, Vector3.up, 20*Time.deltaTime);
         //transform.LookAt(transform.position + moveCamVec_LJY);
     }

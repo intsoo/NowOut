@@ -11,7 +11,7 @@ namespace EasyUI.Dialogs
     {
         [SerializeField] GameObject canvas;
         [SerializeField] GameObject openButtonCanvas;
-
+        public GameObject DataController;
         public void OnPointerDown(PointerEventData eventData)
         {
             canvas.SetActive(true);
@@ -20,7 +20,7 @@ namespace EasyUI.Dialogs
 
         void Awake()
         {
-            if (DataController.Instance.gameData.Ep1_Clear == 2)
+            if (DataController.GetComponent<DataController>().gameData.Ep1_Clear == 2)
             {
                 canvas.SetActive(true);
                 openButtonCanvas.SetActive(false);

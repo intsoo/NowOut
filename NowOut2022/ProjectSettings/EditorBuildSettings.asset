@@ -5,10 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/IntroCutScene.unity
     guid: 11975a980ac56c2468fe955fd8077910
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Episode1_LJY.unity
     guid: f550ff6dc75bd674192abe5ad1d0b9ab
+  - enabled: 1
+    path: Assets/Scenes/TestScene.unity
+    guid: fd31b51b57da8c94b8576b9bd38870bb
+  - enabled: 1
+    path: Assets/CutScene_KSH/EndingCutScene.unity
+    guid: d6b8d4497aed057499b138de3afe8a6c
   m_configObjects: {}

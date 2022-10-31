@@ -8,26 +8,33 @@ public class ShowInventoryUI_KSH : MonoBehaviour
     [SerializeField] GameObject button1_2;
     [SerializeField] GameObject button2_1;
     [SerializeField] GameObject button2_2;
+    public GameObject DataController;
+    [SerializeField] GameObject Phone;
+    [SerializeField] GameObject Earphone;
 
-    // Update is called once per frame
     void Update()
     {
         RedrawUI();
+        if (DataController.GetComponent<DataController>().gameData.Ep1_obj1Order != 0)
+            Phone.SetActive(false);
+        if (DataController.GetComponent<DataController>().gameData.Ep1_obj2Order != 0)
+            Earphone.SetActive(false);
+
     }
 
     public void RedrawUI()
     {
-        if(DataController.Instance.gameData.Ep1_obj2Order == 0 && DataController.Instance.gameData.Ep1_obj1Order == 2)
+        if(DataController.GetComponent<DataController>().gameData.Ep1_obj2Order == 0 && DataController.GetComponent<DataController>().gameData.Ep1_obj1Order == 2)
         {
-            DataController.Instance.gameData.Ep1_obj1Order = 1;
+            DataController.GetComponent<DataController>().gameData.Ep1_obj1Order = 1;
         }
 
-        if (DataController.Instance.gameData.Ep1_obj1Order == 0 && DataController.Instance.gameData.Ep1_obj2Order == 2)
+        if (DataController.GetComponent<DataController>().gameData.Ep1_obj1Order == 0 && DataController.GetComponent<DataController>().gameData.Ep1_obj2Order == 2)
         {
-            DataController.Instance.gameData.Ep1_obj2Order = 1;
+            DataController.GetComponent<DataController>().gameData.Ep1_obj2Order = 1;
         }
 
-        switch (DataController.Instance.gameData.Ep1_obj1Order)
+        switch (DataController.GetComponent<DataController>().gameData.Ep1_obj1Order)
         {
             case 0:
                 button1_1.SetActive(false);
@@ -42,7 +49,7 @@ public class ShowInventoryUI_KSH : MonoBehaviour
                 button1_2.SetActive(true);
                 break;
         }
-        switch (DataController.Instance.gameData.Ep1_obj2Order)
+        switch (DataController.GetComponent<DataController>().gameData.Ep1_obj2Order)
         {
             case 0:
                 button2_1.SetActive(false);

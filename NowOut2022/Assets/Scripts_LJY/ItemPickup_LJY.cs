@@ -8,7 +8,8 @@ public class ItemPickup_LJY : MonoBehaviour
     public GameObject pickupBtn_LJY;
     public GameObject pickupPhone_LJY;
     public GameObject pickupEarphone_LJY;
-    bool isPickup;
+    bool isPickup = false;
+    public GameObject DataController;
 
     void Start()
     {
@@ -31,11 +32,19 @@ public class ItemPickup_LJY : MonoBehaviour
         {
             pickupPhone_LJY.gameObject.SetActive(true);
             isPickup = true;
+            if (DataController.GetComponent<DataController>().gameData.Ep1_obj2Order == 0)
+                DataController.GetComponent<DataController>().gameData.Ep1_obj1Order = 1;
+            else
+                DataController.GetComponent<DataController>().gameData.Ep1_obj1Order = 2;
         }
-        if (col.gameObject.tag.Equals("Earphone"))
+        if (col.gameObject.CompareTag("Earphone"))
         {
             pickupEarphone_LJY.gameObject.SetActive(true);
             isPickup = true;
+            if (DataController.GetComponent<DataController>().gameData.Ep1_obj1Order == 0)
+                DataController.GetComponent<DataController>().gameData.Ep1_obj2Order = 1;
+            else
+                DataController.GetComponent<DataController>().gameData.Ep1_obj2Order = 2;
         }
     }
     

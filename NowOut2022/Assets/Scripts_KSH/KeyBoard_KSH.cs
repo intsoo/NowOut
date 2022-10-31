@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KeyBoard_KSH : MonoBehaviour
 {
@@ -12,6 +9,7 @@ public class KeyBoard_KSH : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI text;
     [SerializeField] GameObject inputFieldCanvas;
+    public GameObject DataController;
 
     private void Awake()
     {
@@ -21,7 +19,12 @@ public class KeyBoard_KSH : MonoBehaviour
         inputField.onEndEdit.AddListener(OnEndEditEvent);
         inputField.onSelect.AddListener(OnSelectEvent);
         inputField.onDeselect.AddListener(OnDeselectEvent);
+    }
 
+    void Update()
+    {
+        if (DataController.GetComponent<DataController>().gameData.checkKeyboard == 1)
+            inputFieldCanvas.SetActive(false);
     }
     public void OnValueChangedEvent(string str)
     {
@@ -33,7 +36,8 @@ public class KeyBoard_KSH : MonoBehaviour
         if (str == "wish")
         {
             inputFieldCanvas.SetActive(false);
-            DataController.Instance.gameData.Ep1_Clear++;
+            DataController.GetComponent<DataController>().gameData.checkKeyboard = 1;
+            DataController.GetComponent<DataController>().SaveGameData();
         }
         else
             inputFieldCanvas.SetActive(true);
@@ -47,5 +51,5 @@ public class KeyBoard_KSH : MonoBehaviour
         inputField.text = str;
     }
 
- 
+
 }
