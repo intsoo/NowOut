@@ -27,5 +27,6 @@ Wake up your sister, who is trapped in her middle school within her dreams. Navi
 ![image](https://github.com/intsoo/Unity3D_NowOut/assets/80330331/f0539d55-4fa2-4d7c-929a-950003513c3e)
 ![image](https://github.com/intsoo/Unity3D_NowOut/assets/80330331/eb0a0eca-ce8c-47ab-bbb0-d7580c1da219)
 ![image](https://github.com/intsoo/Unity3D_NowOut/assets/80330331/9d7d321f-e1b1-4cb5-8569-eef74bd7f53c)
+![image](https://github.com/intsoo/Unity3D_NowOut/assets/80330331/fbac3b0c-37f2-4bfb-ab2f-9bed5ca7e6ec)
 ![image](https://github.com/intsoo/Unity3D_NowOut/assets/80330331/675613b6-dc83-4d63-8a66-b6d2ff70472f)
 ![image](https://github.com/intsoo/Unity3D_NowOut/assets/80330331/fb234d27-1caf-4d5c-9401-5bb36e65c6f8)
