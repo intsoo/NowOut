@@ -1,5 +1,5 @@
 # 이제나와 (Now Out) 
-| KING 2022 Summer Vacation Project
+| KING 2022 Summer Vacation GAME Project
 
 ## Game Description:
 <b> "Dream Escape: Middle School Nightmare" </b>
