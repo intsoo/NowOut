@@ -9,6 +9,6 @@ Wake up your sister, who is trapped in her middle school within her dreams. Navi
 
 
 ## Game Developers:
-* Director: Eunsoo Jung
+* Project Manager (PM): Eunsoo Jung
 * Graphic Artist: Eunsoo Jung
-* Coders: Jooyeon Lee, Seoheon Kim
+* Programmers: Jooyeon Lee, Seoheon Kim
