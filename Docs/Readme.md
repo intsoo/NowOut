@@ -5,5 +5,5 @@
 * `Presentations/`
 
 ## 2. 그래픽 관련
-: 제작한 게임 애니메이션 영상 자료들
-* `Animations/`
+: 제작한 영상 자료들
+* `Videos/`
