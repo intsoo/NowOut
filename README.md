@@ -13,6 +13,7 @@ Wake up your sister, who is trapped in her middle school within her dreams. Navi
 * Graphic Artist: Eunsoo Jung
 * Programmers: Jooyeon Lee, Seoheon Kim
 
+### Manual
 ![image](https://github.com/intsoo/Unity3D_NowOut/assets/80330331/313e35b6-902d-4c35-b79d-89f2084f02fe)
 ![image](https://github.com/intsoo/Unity3D_NowOut/assets/80330331/686b4693-46c8-45cd-a2c0-f2059d08ce48)
 ![image](https://github.com/intsoo/Unity3D_NowOut/assets/80330331/893816ee-764e-4a68-b3b0-ad9b5475fb59)
@@ -22,6 +23,7 @@ Wake up your sister, who is trapped in her middle school within her dreams. Navi
 ![image](https://github.com/intsoo/Unity3D_NowOut/assets/80330331/cdf3130c-6739-4572-9ea6-fdf3649d9098)
 ![image](https://github.com/intsoo/Unity3D_NowOut/assets/80330331/1df7a311-40bb-44a8-8465-4ed206aacabe)
 
+### Preview
 ![image](https://github.com/intsoo/Unity3D_NowOut/assets/80330331/8a364d42-0298-4f0f-8232-b0b057579054)
 ![image](https://github.com/intsoo/Unity3D_NowOut/assets/80330331/f0539d55-4fa2-4d7c-929a-950003513c3e)
 ![image](https://github.com/intsoo/Unity3D_NowOut/assets/80330331/eb0a0eca-ce8c-47ab-bbb0-d7580c1da219)
