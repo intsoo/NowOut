@@ -1,5 +1,5 @@
 # 이제나와 (Now Out) 
-[이화여대 게임 제작 동아리 KING] | 2022 Summer Vacation GAME Project
+<b> 이화여대 게임 제작 동아리 KING | </b> 2022 Summer Vacation GAME Project
 
 ## Game Description:
 <b> "Dream Escape: Middle School Nightmare" </b>
